@@ -1,0 +1,116 @@
+@import "./variabls";
+
+.content_section {
+  #ex-with-icons {
+    @include xsm {
+      margin-bottom: 2rem;
+    }
+  }
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    color: #275b2e;
+    border-color: #275b2e;
+  }
+  /* .fs-7,
+    .fs-7 i {
+      font-size: 14px !important;
+      font-weight: 600 !important;
+    } */
+
+  .c-assessment-report {
+    .nav-link {
+      width: auto;
+      padding: 0;
+      margin: 5px 0;
+      padding: 10px;
+      border-bottom: none;
+      background: #1f892d;
+      color: #fff;
+      border-radius: 5px;
+      &:hover {
+        padding: 0;
+        margin: 5px 0;
+        padding: 10px;
+        border-bottom: none;
+        background: #11501a;
+        color: #fff;
+        border-radius: 5px;
+      }
+      &.active {
+        padding: 0;
+        margin: 5px 0;
+        padding: 10px;
+        border-bottom: none;
+        background: #11501a;
+        color: #fff;
+        border-radius: 5px;
+      }
+    }
+    @include xsm {
+      display: flex;
+      flex-direction: column;
+    }
+    .car-child-one {
+      @include xsm {
+        width: 100%;
+      }
+      .nav-tabs {
+        @include xsm {
+          align-items: flex-start;
+          justify-content: flex-start;
+          overflow-x: scroll;
+          flex-wrap: nowrap;
+          display: flex;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        a {
+          margin-right: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          width: -moz-max-content;
+          width: max-content;
+        }
+      }
+    }
+    .car-child-two {
+      @include xsm {
+        margin-top: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  .custom-tab-section {
+    min-height: 50vh;
+    background: #00000026;
+    padding: 1.1rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-main-tab-btn {
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    display: flex;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    .nav-item {
+      .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        width: -moz-max-content;
+        width: max-content;
+      }
+    }
+  }
+}

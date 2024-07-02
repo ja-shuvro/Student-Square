@@ -1,0 +1,21 @@
+@import "./variabls";
+
+.user-blog-page {
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  width: 100%;
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
